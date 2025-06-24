@@ -1,2 +1,3 @@
 docker-compose up -d 		"Start env"
 docker ps			"To check all containers work"
+docker logs jupyter 2>&1 | Select-String "token="       "To get the link for starting jupyter"
